@@ -11,20 +11,20 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='scraper',
-            name='checker_ref_url',
-        ),
-        migrations.RemoveField(
-            model_name='scraper',
-            name='checker_type',
-        ),
-        migrations.RemoveField(
-            model_name='scraper',
-            name='checker_x_path',
-        ),
-        migrations.RemoveField(
-            model_name='scraper',
-            name='checker_x_path_result',
-        ),
+        # migrations.RemoveField(
+        #     model_name='scraper',
+        #     name='checker_ref_url',
+        # ),
+        # migrations.RemoveField(
+        #     model_name='scraper',
+        #     name='checker_type',
+        # ),
+        # migrations.RemoveField(
+        #     model_name='scraper',
+        #     name='checker_x_path',
+        # ),
+        # migrations.RemoveField(
+        #     model_name='scraper',
+        #     name='checker_x_path_result',
+        # ),
     ]
