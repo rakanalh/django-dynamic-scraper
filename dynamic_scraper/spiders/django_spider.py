@@ -470,8 +470,8 @@ class DjangoSpider(DjangoBaseSpider):
                 loader.add_xpath(name, scraper_elem.x_path, *procs)
             if not scraper_elem.scraped_obj_attr.save_to_db:
                 item = loader.load_item()
-                if '_non_db_results' not in item.__dict__:
-                    item._non_db_results = {}
+                if '_non_db_results' not in self.loader.item.__dict__:
+                    self.loader.item._non_db_results = {}
                 if name in item:
                     self.loader.item._non_db_results[scraper_elem.scraped_obj_attr.name] = item[name]
                     self.tmp_non_db_results[item_num][scraper_elem.scraped_obj_attr.name] = item[name]
